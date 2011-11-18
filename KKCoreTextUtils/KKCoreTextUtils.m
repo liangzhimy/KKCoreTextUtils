@@ -3,21 +3,23 @@
 //  KKCoreTextUtils
 //
 //  Created by Kolin Krewinkel on 11.17.11.
-//  Copyright (c) 2011 Enkla. All rights reserved.
+//  Copyright (c) 2011 Kolin Krewinkel. All rights reserved.
 //
 
 #import "KKCoreTextUtils.h"
 
 @implementation KKCoreTextUtils
 
-- (id)init
++ (CGFontRef)fontAtURL:(NSURL *)URL
 {
-    self = [super init];
-    if (self) {
-        // Initialization code here.
-    }
+    CFURLRef url = CFURLCreateWithFileSystemPath(kCFAllocatorDefault, (__bridge CFStringRef)[URL absoluteString], kCFURLPOSIXPathStyle, false);
+    CGDataProviderRef dataProvider = CGDataProviderCreateWithURL(url);
+    CGFontRef original = CGFontCreateWithDataProvider(dataProvider);
     
-    return self;
+    CFRelease(dataProvider);
+    CFRelease(url);
+
+    return original;
 }
 
 @end

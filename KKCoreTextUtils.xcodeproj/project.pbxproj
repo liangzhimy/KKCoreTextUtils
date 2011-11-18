@@ -9,14 +9,22 @@
 /* Begin PBXBuildFile section */
 		1AD5172E1476398F00EE1FEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD5172D1476398F00EE1FEC /* Foundation.framework */; };
 		1AD517341476398F00EE1FEC /* KKCoreTextUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD517331476398F00EE1FEC /* KKCoreTextUtils.m */; };
+		1AD5174A1477036100EE1FEC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD517491477036100EE1FEC /* CoreText.framework */; };
+		1AD5174E147706EE00EE1FEC /* KKCoreTextLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD5174C147706EE00EE1FEC /* KKCoreTextLabel.h */; };
+		1AD5174F147706EE00EE1FEC /* KKCoreTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD5174D147706EE00EE1FEC /* KKCoreTextLabel.m */; };
+		1AD517511477092000EE1FEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD517501477092000EE1FEC /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1AD5172A1476398F00EE1FEC /* libKKCoreTextUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKKCoreTextUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD5172D1476398F00EE1FEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1AD517311476398F00EE1FEC /* KKCoreTextUtils-Prefix.pch */ = {isa = PBXFileReference; path = "KKCoreTextUtils-Prefix.pch"; sourceTree = "<group>"; };
-		1AD517321476398F00EE1FEC /* KKCoreTextUtils.h */ = {isa = PBXFileReference; path = KKCoreTextUtils.h; sourceTree = "<group>"; };
+		1AD517311476398F00EE1FEC /* KKCoreTextUtils-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KKCoreTextUtils-Prefix.pch"; sourceTree = "<group>"; };
+		1AD517321476398F00EE1FEC /* KKCoreTextUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKCoreTextUtils.h; sourceTree = "<group>"; };
 		1AD517331476398F00EE1FEC /* KKCoreTextUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKCoreTextUtils.m; sourceTree = "<group>"; };
+		1AD517491477036100EE1FEC /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		1AD5174C147706EE00EE1FEC /* KKCoreTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCoreTextLabel.h; sourceTree = "<group>"; };
+		1AD5174D147706EE00EE1FEC /* KKCoreTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCoreTextLabel.m; sourceTree = "<group>"; };
+		1AD517501477092000EE1FEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,7 +32,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD5174A1477036100EE1FEC /* CoreText.framework in Frameworks */,
 				1AD5172E1476398F00EE1FEC /* Foundation.framework in Frameworks */,
+				1AD517511477092000EE1FEC /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +61,9 @@
 		1AD5172C1476398F00EE1FEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1AD517491477036100EE1FEC /* CoreText.framework */,
 				1AD5172D1476398F00EE1FEC /* Foundation.framework */,
+				1AD517501477092000EE1FEC /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -61,6 +73,8 @@
 			children = (
 				1AD517321476398F00EE1FEC /* KKCoreTextUtils.h */,
 				1AD517331476398F00EE1FEC /* KKCoreTextUtils.m */,
+				1AD5174C147706EE00EE1FEC /* KKCoreTextLabel.h */,
+				1AD5174D147706EE00EE1FEC /* KKCoreTextLabel.m */,
 				1AD517301476398F00EE1FEC /* Supporting Files */,
 			);
 			path = KKCoreTextUtils;
@@ -81,6 +95,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD5174E147706EE00EE1FEC /* KKCoreTextLabel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD517341476398F00EE1FEC /* KKCoreTextUtils.m in Sources */,
+				1AD5174F147706EE00EE1FEC /* KKCoreTextLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +206,7 @@
 				DSTROOT = /tmp/KKCoreTextUtils.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KKCoreTextUtils/KKCoreTextUtils-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -202,6 +219,7 @@
 				DSTROOT = /tmp/KKCoreTextUtils.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KKCoreTextUtils/KKCoreTextUtils-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -227,6 +245,7 @@
 				1AD517391476398F00EE1FEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
