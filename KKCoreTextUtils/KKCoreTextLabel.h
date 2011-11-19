@@ -7,8 +7,15 @@
 //
 
 
-@interface KKCoreTextLabel : UIResponder
+@interface KKCoreTextLabel : UIView
+
+#pragma mark - Properties
 
 @property (nonatomic) CGFontRef font;
+@property (nonatomic, copy) NSAttributedString *text;
+
+#pragma mark - Getters
+
+- (CGSize)suggestedSizeForRange:(NSRange)range constraints:(CGSize)constraints fitRange:(NSRange)fitRange;
 
 @end
