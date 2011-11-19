@@ -12,12 +12,9 @@
 
 + (CGFontRef)fontAtURL:(NSURL *)URL
 {
-    CFURLRef url = CFURLCreateWithFileSystemPath(kCFAllocatorDefault, (__bridge CFStringRef)[URL absoluteString], kCFURLPOSIXPathStyle, false);
-    CGDataProviderRef dataProvider = CGDataProviderCreateWithURL(url);
+    CGDataProviderRef dataProvider = CGDataProviderCreateWithURL((__bridge CFURLRef)URL);
     CGFontRef original = CGFontCreateWithDataProvider(dataProvider);
-    
     CFRelease(dataProvider);
-    CFRelease(url);
 
     return original;
 }
