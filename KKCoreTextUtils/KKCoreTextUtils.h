@@ -6,7 +6,7 @@
 //  Copyright (c) 2011 Kolin Krewinkel. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "KKCoreTextLabel.h"
 
 @interface KKCoreTextUtils : NSObject
 

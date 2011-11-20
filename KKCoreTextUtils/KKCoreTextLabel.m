@@ -27,8 +27,6 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     [[UIColor blackColor] setFill];
     CTFrameDraw(_frameRef, context);
-    
-    
 }
 
 #pragma mark - Setters
