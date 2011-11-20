@@ -203,7 +203,7 @@
 		1AD517381476398F00EE1FEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/KKCoreTextUtils.dst;
+				DSTROOT = "/../BuildProductsPath/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KKCoreTextUtils/KKCoreTextUtils-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
@@ -216,7 +216,7 @@
 		1AD517391476398F00EE1FEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/KKCoreTextUtils.dst;
+				DSTROOT = "/../BuildProductsPath/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KKCoreTextUtils/KKCoreTextUtils-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
